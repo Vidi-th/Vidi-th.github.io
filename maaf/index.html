@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spesial Untuk April</title>
+</head>
+<body>
+    <div class="open">
+        <i>❤️</i>  
+        <span>Klik Lovenya</span>  
+    </div>
+    <script src="s_cleaned_no_watermark.js"></script>
+    <script>
+        ucapan = `maaf ya ngecewain kamu akhir-akhir ini,
+        pas kamu lagi butuh aku, aku malah sibuk dengan urusanku sendiri.
+        aku sayang kamu, aku sayang kamu banget, maaf yaa..
+        love you sayangku April ❤️`;
+        musik = `sad.mp3`;
+        nomorWhatsapp = `6287737054954`;
+        idTelegram = ``;
+
+        DekaTutorial(ucapan, musik, nomorWhatsapp, idTelegram);
+
+        // Ubah watermark
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('div').forEach(el => {
+            if (el.textContent?.toLowerCase().includes('template by deka tutorial')) {
+                el.textContent = 'by your boyfriend Vidi';
+            }
+            });
+        });
+    </script>
+</body>
+</html>
